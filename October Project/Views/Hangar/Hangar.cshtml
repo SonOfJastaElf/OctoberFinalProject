@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Hangar>
+
+<h2>All the Planes</h2>
+<table class="table" style="color: #ffffff">
+    <tr>
+        <th>PlaneID</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Country</th>
+        <th>Type</th>
+        <th>Tier</th>
+        <th>PremiumStatus</th>
+    </tr>
+
+    @foreach(var plane in Model)
+    {
+        <tr>
+            <td>@plane.PlaneID</td>
+            <td>@plane.Make</td>
+            <td>@plane.Model</td>
+            <td>@plane.Country</td>
+            <td>@plane.Type</td>
+            <td>@plane.Tier</td>
+            <td>@plane.PremiumStatus</td>
+        </tr>
+    }
+</table>
+
